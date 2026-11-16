@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Enrollment Form</title>
+</head>
+<body style="background-color: beige; font-family: Arial, sans-serif;">
+  <h2>Student Details</h2>
+  <form action="/submit-data" method="post">
+    <label>First Name: <input name="firstName" type="text" required></label><br><br>
+    <label>Last Name: <input name="lastName" type="text" required></label><br><br>
+    <label>Email: <input name="email" type="email"></label><br><br>
+    <label>Age: <input name="myAge" type="number" min="1" max="120"></label><br><br>
+    <p>Please select your gender:</p>
+    <label><input type="radio" name="gender" value="male"> Male</label><br>
+    <label><input type="radio" name="gender" value="female"> Female</label><br>
+    <label><input type="radio" name="gender" value="other"> Other</label>
+    <p>Qualifications</p>
+    <label><input type="checkbox" name="Qual" value="GCSE"> GCSE</label><br>
+    <label><input type="checkbox" name="Qual" value="A-level"> A-level</label><br>
+    <label><input type="checkbox" name="Qual" value="HNC"> Higher National Certificate</label><br>
+    <label><input type="checkbox" name="Qual" value="HND"> HND/Foundation Degree</label><br>
+    <label><input type="checkbox" name="Qual" value="BSc"> Bachelor Degree</label><br>
+    <label><input type="checkbox" name="Qual" value="Master Degree"> Master's Degree</label><br>
+    <label><input type="checkbox" name="Qual" value="PhD"> PhD</label><br><br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
